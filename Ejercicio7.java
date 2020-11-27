@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Ejercicio7{
@@ -24,4 +25,5 @@ public class Ejercicio7{
 		else{System.out.println("Error");}
 		
 	}
+
 }
