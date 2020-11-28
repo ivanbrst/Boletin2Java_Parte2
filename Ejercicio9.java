@@ -10,7 +10,7 @@ public class Ejercicio9{
 		int contac;
 		
 		Scanner a=new Scanner(System.in);
-		System.out.println("Introduzca o número");
+		System.out.println("Introduzca un número impar entre 3 e 15");
 		
 		longo=a.nextInt();
 		
@@ -33,7 +33,18 @@ public class Ejercicio9{
 						}
 						System.out.println("");}
 						
-			
+				// Parte de abajo
+							
+				for(contaf=0; contaf<=longo/2; contaf++)
+					{for(contac=1; contac<=longo; contac++)
+						
+						{if((contac==contaf+1) | (contac==longo-contaf))
+							{System.out.print("*");}
+						else{System.out.print(" ");}
+						}
+					System.out.println("");}
+						
+						
 						
 						
 			}
