@@ -35,7 +35,7 @@ public class Ejercicio9{
 						
 				// Parte de abajo
 							
-				for(contaf=0; contaf<=longo/2; contaf++)
+				for(contaf=1; contaf<=longo/2; contaf++)
 					{for(contac=1; contac<=longo; contac++)
 						
 						{if((contac==contaf+1) | (contac==longo-contaf))
