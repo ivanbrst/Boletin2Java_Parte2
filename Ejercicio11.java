@@ -1,3 +1,5 @@
+package boletin2java;
+
 import java.util.Scanner;
 
 public class Ejercicio11{
@@ -9,7 +11,11 @@ public class Ejercicio11{
         int dia;
         int mes;
         int ano;
-        int suma;
+        int numero;
+        int lucky;
+        int digito;
+        
+        lucky=0; 
         
         Scanner a=new Scanner(System.in);
         System.out.println("Introduzca o día que naceu"); 
@@ -21,8 +27,27 @@ public class Ejercicio11{
         System.out.println("Introduzca o ano que naceu");
         ano=a.nextInt();
         
-
+        numero=dia+ano+mes;
+        
+        while((lucky>=10) | (lucky==0)){
+            
+            lucky=0; 
+            
+            while(numero>0){
+                digito=numero%10;
+                numero=numero/10;
+                lucky=lucky+digito;
+            }
+            
+            numero=lucky;
+            
+        }    
+            
+            
+    
+        System.out.println("O número da sorte é "+lucky+"");
 
     }
 }
+
 
